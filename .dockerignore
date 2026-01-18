@@ -1,0 +1,45 @@
+# Git 相关
+.git
+.gitignore
+.dockerignore
+
+# 构建产物
+bazel-*
+build/
+dist/
+*.exe
+claat.exe
+
+# 依赖目录
+node_modules/
+site/node_modules/
+claat/bin/
+
+# 临时文件
+.tmp
+.content
+gulp-cache
+.DS_Store
+*.log
+
+# 文档（排除文档类 .md 文件，但保留 codelabs 源文件）
+README.md
+CONTRIBUTING.md
+FORMAT-GUIDE.md
+site/README.md
+site/ENV_CONFIG.md
+claat/README.md
+sample/**/*.md
+# 注意：不排除 codelabs/**/*.md，因为这些是需要转换的源文件
+
+# 测试文件
+*_test.go
+testdata/
+
+# IDE 配置
+.idea/
+.vscode/
+
+# 其他
+*.swp
+*.swo
